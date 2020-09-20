@@ -1,0 +1,110 @@
+/* background edited from */
+
+body{
+  background-image: url("https://images.hdqwalls.com/download/wave-sunset-4k-1366x768.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  color: white;
+  margin-left: 43%;
+  /* margin-top: 15%; */
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+button{
+  margin-left: 42%;
+}
+h5{
+  text-align: center;
+  color: white;
+  font-family: fantasy;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: #0c0c0c; */
+}
+
+button {
+  position: relative;
+  padding: 20px 50px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+button span {
+  position: relative;
+  color: #fff;
+  fot-size: 20px;
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
+}
+
+button .liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: #4973ff;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transition: .5s;
+}
+
+button .liquid::after,
+button .liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: none;
+}
+
+button .liquid::before {
+
+  border-radius: 45%;
+  background: rgba(20, 20, 20, 1);
+  animation: animate 5s linear infinite;
+}
+
+button .liquid::after {
+
+  border-radius: 40%;
+  background: rgba(20, 20, 20, .5);
+  animation: animate 10s linear infinite;
+}
+
+button:hover .liquid{
+  top: -120px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
+  }
+}
